@@ -17,13 +17,10 @@
 /*                              PUBLIC FUNCTIONS                              */
 /*----------------------------------------------------------------------------*/
 
-static int turno=0;
 static bool spy_usado=false;
 
 direction_t execute_attacker_strategy(
     position_t attacker_position, Spy defender_spy) {
-    
-	turno++; //nao tem como pegar o tamanho do tabuleiro mesmo, precisamos disso?
 
  	UNUSED(attacker_position);
 	int num = rand()%16;

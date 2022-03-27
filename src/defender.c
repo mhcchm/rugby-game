@@ -17,22 +17,11 @@
 /*                              PUBLIC FUNCTIONS                              */
 /*----------------------------------------------------------------------------*/
 
-/*direction_t execute_defender_strategy(
-    position_t defender_position, Spy attacker_spy) {
-  // TODO: unused parameters, remove these lines later
-  UNUSED(defender_position);
-  UNUSED(attacker_spy);
-
-  // TODO: Implement Defender logic here
-  return (direction_t) DIR_LEFT;
-}*/
-
 static bool spy_usado = false;
 
 direction_t execute_defender_strategy(
     position_t defender_position, Spy attacker_spy) {
 	UNUSED(defender_position);
-	//UNUSED(attacker_spy);
 	int usar_spy = rand()%10;
 	int num = rand()%16;
 	
@@ -42,7 +31,6 @@ direction_t execute_defender_strategy(
 		UNUSED(atacante);	
 	}
 
-	//estrategia do defensor? se mexer aleatoriamente?
 	if(spy_usado == false){
 		
 		if(0<=num && num<=4)
